@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="NuZ-bf-kdg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jBT-Pu-OPe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DTP-K8-c0H">
@@ -90,6 +91,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="357" width="360" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="SendMailButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rY5-Jn-nd7"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1V-o4-1im">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -121,6 +125,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enterMessageTextField" destination="Ik5-rJ-AzL" id="XR2-Di-Eei"/>
+                        <outlet property="enterNameTextField" destination="48r-gF-8oR" id="8rY-an-gOt"/>
+                        <outlet property="messageLabel" destination="U1V-o4-1im" id="sdc-Mx-pMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
