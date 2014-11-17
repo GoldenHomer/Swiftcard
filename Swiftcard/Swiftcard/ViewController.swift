@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBAction func SendMailButton(sender: UIButton) {
         messageLabel.hidden = false
 	messageLabel.text = enterMessageTextField.text
+	enterMessageTextField.text = ""
     }
 }
 
