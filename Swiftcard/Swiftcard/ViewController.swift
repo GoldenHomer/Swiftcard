@@ -32,7 +32,8 @@ class ViewController: UIViewController {
 
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
-        
+        //FirstResponder hides
+
         nameLabel.hidden = false
         nameLabel.text = enterNameTextField.text
         
